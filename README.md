@@ -21,3 +21,35 @@ Python 3.7 or higher
 pip (Python package installer)
 
 CUDA (for GPU support, optional but recommended)
+
+# Install Dependencies
+
+# Dataset Preparation
+Prepare a dataset with labeled images of fire and smoke. The dataset should follow the YOLO format, with corresponding annotation files for each image.
+
+# Dataset Directory Structure
+dataset/
+├── images/
+│   ├── train/
+│   │   ├── img1.jpg
+│   │   ├── img2.jpg
+│   └── val/
+│       ├── img1.jpg
+│       ├── img2.jpg
+└── labels/
+    ├── train/
+    │   ├── img1.txt
+    │   ├── img2.txt
+    └── val/
+        ├── img1.txt
+        ├── img2.txt
+# Training
+Modify the Configuration File
+Update the configuration file config.yaml with the dataset paths and other hyperparameters.
+Train the Model
+# Inference
+Run the inference script to detect fire and smoke in images or video streams.
+Detect Fire and Smoke in Images
+Detect Fire and Smoke in Video
+# Results
+The output will display the detected fire and smoke with bounding boxes around them. Additionally, it will save the results in the output/ directory.
